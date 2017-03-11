@@ -1,0 +1,36 @@
+body{
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.questionContainer{
+  padding: 20%;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  background-color: #ddd;
+}
+
+.buttons button{
+  font-size: 2em;
+  width: 30%;
+  border: solid black 5px;
+}
+
+#yesButton{
+  color: green;
+}
+
+#noButton{
+  color: red;
+}
+
