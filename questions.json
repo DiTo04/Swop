@@ -1,9 +1,9 @@
-{"questions" : 
+{"questions" :
 	[
 		{
 			"id":1,
 			"question":"Lönekartläggning och jämställdhetsplaner ska göras årligen av arbetsgivare med fler än tio anställda och tillkännager detta för regeringen.",
-			"forslagspunkt":"2015/16:AU10p1", //matchar precis med formatet för <forslagspunkt> i voteringsanropet
+			"forslagspunkt":"2015/16:AU10p1", 
 			"invert":true
 		},
 		{
