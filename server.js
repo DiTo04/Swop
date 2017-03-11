@@ -7,7 +7,7 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
-//app.use('/static', express.static('public'))
+let swopbackend = require("./lib/SwopBackEnd");
 app.use(express.static(__dirname));
 
 let data = [
@@ -26,14 +26,14 @@ let data = [
 ];
 
 app.get("/home", (req, res) => {
-
   res.sendFile(__dirname + "/question.html")
 })
 
 app.get("/question", (req, res) => {
   //BYT UT med funktion som hämtar data
-
-  res.send(data);
+  data = swopbackend.getQuestions();
+  console.log(data);
+  res.send(swopbackend.getQuestions());
 })
 
 app.post("/finished", (req, res) => {
