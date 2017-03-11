@@ -17,8 +17,6 @@ function answering(state) {
   var id = parseInt($(".question").attr("questionID"));
   answeredQuestions.push({agree: state, id: id});
   if(questions.length === 0){
-    console.log(answeredQuestions);
-    //$.post("/finished", answeredQuestions, function(){})
     $.ajax({
       url: '/finished',
       data: {answeredQuestions: answeredQuestions},
@@ -30,8 +28,9 @@ function answering(state) {
 }
 
 function nextQuestion() {
+  console.log(questions[0].questions)
   var q = $(".question");
-  q.text(questions[0].question);
+  q.text(questions[0].questions);
   q.attr("questionID", questions[0].id);
   questions.shift();
 }
