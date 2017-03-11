@@ -1,0 +1,29 @@
+{
+  "name": "swop",
+  "version": "1.0.0",
+  "description": "Hack4Swe",
+  "main": "index.js",
+  "dependencies": {
+    "xmlhttprequest": "git+https://github.com/driverdan/node-XMLHttpRequest.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiTo04/Swop.git"
+  },
+  "keywords": [
+    "Politic",
+    "tinder",
+    "open",
+    "data"
+  ],
+  "author": "The Darlings",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiTo04/Swop/issues"
+  },
+  "homepage": "https://github.com/DiTo04/Swop#readme"
+}
