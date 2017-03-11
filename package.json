@@ -4,6 +4,7 @@
   "description": "Hack4Swe",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "xmlhttprequest": "git+https://github.com/driverdan/node-XMLHttpRequest.git"
   },

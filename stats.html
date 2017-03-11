@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+svg{
+
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}
+
+
+table{
+  font-size: 3em;
+}
+td{
+  padding-left: 10px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+</style>
+<svg width="960" height="500"></svg>
+<div id="kommuner">
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+var kommunData = [
+  {result: 5.72, name: "Vänsterpartiet", color: "#C40000"},
+  {result: 31.01, name: "Socialdemokraterna", color: "#FF0000"},
+  {result: 6.89, name: "Miljöpartiet", color: "#008000"},
+  {result: 6.11, name: "Centerpartiet", color: "#63A91D"},
+  {result: 5.42, name: "Liberalerna", color: "#3399FF"},
+  {result: 23.33, name: "Moderaterna", color: "#66BEE6"},
+  {result: 4.57, name: "Kristdemokraterna", color: "#1B5CB1"},
+  {result: 12.86, name: "Sverige\"demokraterna\"", color: "#4E83A3"}
+]
+
+var svg = d3.select("svg"),
+margin = {top: 20, right: 20, bottom: 30, left: 40},
+width = +window.outerWidth - margin.left ,
+height = +svg.attr("height") - margin.top - margin.bottom;
+svg.attr("width", width*2);
+console.log(width)
+console.log(svg.attr("width"))
+
+var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+y = d3.scaleLinear().rangeRound([height, 0]);
+
+var g = svg.append("g")
+.attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+//.attr("transform", "")
+//.attr("transform", "translate(200, 300) rotate(180)")
+
+
+
+  //x.domain(kommunData.map(function(d) { return d.letter; }));
+  //y.domain([0, d3.max(kommunData, function(d) { return d.frequency; })]);
+
+  g.append("g")
+  .attr("class", "axis axis--x")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x));
+
+  g.append("g")
+  .attr("class", "axis axis--y")
+  .call(d3.axisLeft(y).ticks(10, "%"))
+  .append("text")
+  .attr("transform", "rotate(-90)")
+  .attr("y", 6)
+  .attr("dy", "0.71em")
+  .attr("text-anchor", "end")
+  .text("Frequency");
+
+  /*g.selectAll(".bar")
+  .data(kommunData)
+  .enter().append("rect")
+  .attr("class", "bar")
+  .attr("x", function(d, i){return i*20})
+  .attr("y", 100)*/
+
+  g.selectAll(".bar")
+  .data(kommunData)
+  .enter().append("rect")
+  .attr("class", "bar")
+  .style("fill", function(d){return d.color})
+  .attr("x", function(d, i) { return i*width/4 + 10; })
+  .attr("y", function(d, i) { return (height)-(d.result/50)*450})
+  .attr("width", 40)
+  .attr("height", function(d) { return (d.result/50)*450 })
+  .text(function(d){return d.name});
+
+var kommunData2 = [
+  {name: "Skåne", match: 0.7},
+  {name: "Tjillevippen", match: 0.68},
+  {name: "Glasblåsarens barn", match: 0.66},
+  {name: "Mera mål", match: 0.64},
+  {name: "Skåne igen", match: 0.62},
+  {name: "Katten Gustaf", match: 0.6},
+  {name: "Mordor", match: 0.5},
+  {name: "En apa som liknar dig", match: 0.4},
+  {name: "Banan", match: 0.3},
+  {name: "46elks", match: 0.2},
+]
+
+var kommunLista = $("<table>").html("<tr><th>Kommun</th><th>Matchning</th></tr>");
+kommunData2.forEach(function(d){
+  var tr = $("<tr>");
+  tr.append($("<td>").text(d.name)).append($("<td>").text(d.match))
+  kommunLista.append(tr);
+})
+
+console.log(kommunLista)
+
+$("#kommuner").append(kommunLista);
+</script>
+</html>
