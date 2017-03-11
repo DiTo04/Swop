@@ -24,51 +24,59 @@ Riksdagen ställer sig bakom det som anförs i motionen om att bistå den intern
 		},
 		{
 			"id":3,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false
+			"question":"Förslaget innebär att bemyndigandet för regeringen att sända väpnad styrka utomlands för övning och annan utbildning ska omfatta all slags övning och annan utbildning inom ramen för internationellt militärt samarbete.",
+			"forslagspunkt":"2015/16:FöU14p2",
+			"invert":false,
+			"url":"http://data.riksdagen.se/dokument/H303122.html"
 		},
 		{
 			"id":4,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om behovet av initiativ för att fortsätta att synliggöra och stärka möjligheterna för kvinnors företagande och tillkännager detta för regeringen",
+			"forslagspunkt":"2015/16:NU15p2",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3021189.html"
 		},
 		{
 			"id":5,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":6,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":7,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":8,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":9,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":10,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		}
 	]
 }
