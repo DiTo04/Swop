@@ -4,62 +4,79 @@
 			"id":1,
 			"question":"Lönekartläggning och jämställdhetsplaner ska göras årligen av arbetsgivare med fler än tio anställda och tillkännager detta för regeringen.",
 			"forslagspunkt":"2015/16:AU10p1", 
-			"invert":true
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3022169.html"
 		},
 		{
 			"id":2,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false
+			"question":"Förslag till riksdagsbeslut:
+Riksdagen ställer sig bakom det som anförs i motionen om att stärka det lokala förebyggande arbetet mot rekrytering och radikalisering och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om att ta till vara den nationella samordnarens arbete och utveckla det förebyggande arbetet i kommunerna och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om landsförräderi och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om en förstärkt gränskontroll och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om signalspaning mot terrorresande och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om Säkerhetspolisens resurser och verktyg	 och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om uteslutningsföreläggande och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om att bistå den internationella alliansen i kampen mot IS och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:JuU7p11",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H302255.html"
 		},
 		{
 			"id":3,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false
+			"question":"Förslaget innebär att bemyndigandet för regeringen att sända väpnad styrka utomlands för övning och annan utbildning ska omfatta all slags övning och annan utbildning inom ramen för internationellt militärt samarbete.",
+			"forslagspunkt":"2015/16:FöU14p2",
+			"invert":false,
+			"url":"http://data.riksdagen.se/dokument/H303122.html"
 		},
 		{
 			"id":4,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om behovet av initiativ för att fortsätta att synliggöra och stärka möjligheterna för kvinnors företagande och tillkännager detta för regeringen",
+			"forslagspunkt":"2015/16:NU15p2",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3021189.html"
 		},
 		{
 			"id":5,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":6,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":7,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":8,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":9,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		},
 		{
 			"id":10,
 			"question":"",
 			"forslagspunkt":"wow",
-			"invert":false
+			"invert":false,
+			"url":""
 		}
 	]
-
 }
