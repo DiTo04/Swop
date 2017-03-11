@@ -2,15 +2,22 @@
 	[
 		{
 			"id":1,
-			"question":"Lönekartläggning och jämställdhetsplaner ska göras årligen av arbetsgivare med fler än tio anställda och tillkännager detta för regeringen.",
+			"question":"Förslag till riksdagsbeslut: Lönekartläggning och jämställdhetsplaner ska göras årligen av arbetsgivare med fler än tio anställda och tillkännager detta för regeringen.",
 			"forslagspunkt":"2015/16:AU10p1", //matchar precis med formatet för <forslagspunkt> i voteringsanropet
-			"invert":true
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3022169.html"
 		},
 		{
 			"id":2,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false
+			"question":"Förslag till riksdagsbeslut:
+Riksdagen ställer sig bakom det som anförs i motionen om landsförräderi och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om en förstärkt gränskontroll och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om signalspaning mot terrorresande och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om uteslutningsföreläggande och tillkännager detta för regeringen.
+Riksdagen ställer sig bakom det som anförs i motionen om att bistå den internationella alliansen i kampen mot IS och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:JuU7p11",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H302255.html"
 		},
 		{
 			"id":3,
