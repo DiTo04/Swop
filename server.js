@@ -3,6 +3,10 @@
 let express = require("express");
 let app = express();
 
+let bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+
 //app.use('/static', express.static('public'))
 app.use(express.static(__dirname));
 
@@ -21,15 +25,19 @@ let data = [
   }
 ];
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
+
   res.sendFile(__dirname + "/question.html")
 })
 
 app.get("/question", (req, res) => {
-  console.log("LOL2")
   //BYT UT med funktion som hämtar data
 
   res.send(data);
+})
+
+app.post("/finished", (req, res) => {
+  console.log(JSON.stringify(req.body));
 })
 
 app.listen(3000, () => {
