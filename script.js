@@ -1,10 +1,3 @@
-/*var xhr = new XMLHttpRequest();
-
-xhr.onreadystatechange = function(){
-  console.log(this.response);
-}
-xhr.open("GET", "/question", true);
-xhr.send();*/
 var answeredQuestions = [];
 var questions = [];
 
@@ -25,7 +18,12 @@ function answering(state) {
   answeredQuestions.push({agree: state, id: id});
   if(questions.length === 0){
     console.log(answeredQuestions);
-    //$.get("/finished", answeredQuestions, function(){}, )
+    //$.post("/finished", answeredQuestions, function(){})
+    $.ajax({
+      url: '/finished',
+      data: {answeredQuestions: answeredQuestions},
+      type: 'POST',
+    });
   }else{
     nextQuestion();
   }

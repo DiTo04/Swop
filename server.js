@@ -3,7 +3,11 @@
 let express = require("express");
 let app = express();
 
-//app.use('/static', express.static('public'))
+let bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+
+let swopbackend = require("./lib/SwopBackEnd");
 app.use(express.static(__dirname));
 
 let data = [
@@ -21,15 +25,19 @@ let data = [
   }
 ];
 
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   res.sendFile(__dirname + "/question.html")
 })
 
 app.get("/question", (req, res) => {
-  console.log("LOL2")
   //BYT UT med funktion som hämtar data
+  data = swopbackend.getQuestions();
+  console.log(data);
+  res.send(swopbackend.getQuestions());
+})
 
-  res.send(data);
+app.post("/finished", (req, res) => {
+  console.log(JSON.stringify(req.body));
 })
 
 app.listen(3000, () => {
