@@ -1,9 +1,9 @@
-{"questions" : 
+{"questions" :
 	[
 		{
 			"id":1,
-			"question":"Förslag till riksdagsbeslut: Lönekartläggning och jämställdhetsplaner ska göras årligen av arbetsgivare med fler än tio anställda och tillkännager detta för regeringen.",
-			"forslagspunkt":"2015/16:AU10p1", //matchar precis med formatet för <forslagspunkt> i voteringsanropet
+			"question":"Lönekartläggning och jämställdhetsplaner ska göras årligen av arbetsgivare med fler än tio anställda och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:AU10p1", 
 			"invert":true,
 			"url":"http://data.riksdagen.se/dokument/H3022169.html"
 		},
@@ -71,5 +71,4 @@ Riksdagen ställer sig bakom det som anförs i motionen om att bistå den intern
 			"invert":false
 		}
 	]
-
 }
