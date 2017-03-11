@@ -14,7 +14,7 @@ function answerNo() {
 }
 
 function answering(state) {
-  var id = parseInt($(".question").attr("questionID"));
+  var id = $(".question").attr("questionID");
   answeredQuestions.push({agree: state, id: id});
   if(questions.length === 0){
     $.ajax({
