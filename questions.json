@@ -9,10 +9,10 @@
 		},
 		{
 			"id":2,
-			"question":"Stärka det lokala förebyggande arbetet mot rekrytering och radikalisering.\nTa till vara den nationella samordnarens arbete och utveckla det förebyggande arbetet i kommunerna.\nRiksdagen ställer sig bakom det som anförs i motionen om landsförräderi och tillkännager detta för regeringen.\nRiksdagen ställer sig bakom det som anförs i motionen om en förstärkt gränskontroll och tillkännager detta för regeringen.\nRiksdagen ställer sig bakom det som anförs i motionen om signalspaning mot terrorresande och tillkännager detta för regeringen.\nRiksdagen ställer sig bakom det som anförs i motionen om Säkerhetspolisens resurser och verktyg och tillkännager detta för regeringen.\nRiksdagen ställer sig bakom det som anförs i motionen om uteslutningsföreläggande och tillkännager detta för regeringen.\nRiksdagen ställer sig bakom det som anförs i motionen om att bistå den internationella alliansen i kampen mot IS och tillkännager detta för regeringen.",
-			"forslagspunkt":"2015/16:JuU7p11",
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att Nationella insatsstyrkan ska ha tillräcklig operativ förmåga och kunna agera i samband med terroristangrepp på flera geografiska platser samtidigt och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:JuU7p21",
 			"invert":true,
-			"url":"http://data.riksdagen.se/dokument/H302255.html"
+			"url":"http://data.riksdagen.se/dokument/H302249.html"
 		},
 		{
 			"id":3,
@@ -30,45 +30,45 @@
 		},
 		{
 			"id":5,
-			"question":"",
-			"forslagspunkt":"wow",
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att utveckla Bromma flygplats och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:TU14p4",
 			"invert":false,
-			"url":""
+			"url":"http://data.riksdagen.se/dokument/H3021328.text"
 		},
 		{
 			"id":6,
-			"question":"",
-			"forslagspunkt":"wow",
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att regeringen bör återkomma till riksdagen med förslag om att utbildning vid internationella skolor i Sverige ska vara avgiftsfri och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:UbU5p2",
 			"invert":false,
-			"url":""
+			"url":"http://data.riksdagen.se/dokument/H302399.html"
 		},
 		{
 			"id":7,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false,
-			"url":""
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att Sveriges regering ska utveckla en strategi för att skydda den marina känsliga miljön i Arktis och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:UU11p2",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3023019.html"
 		},
 		{
 			"id":8,
-			"question":"",
-			"forslagspunkt":"wow",
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att flyktingkvoten inte ska användas för anhöriginvandring och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:SfU16p4",
 			"invert":false,
-			"url":""
+			"url":"http://data.riksdagen.se/dokument/H3023417.html"
 		},
 		{
 			"id":9,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false,
-			"url":""
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att en svensk livsmedelsstrategi behövs för att stärka villkoren för svensk livsmedelsindustri genom att fokusera på att förbättra konkurrenssituationen för svenska livsmedelsproducenter och på att öka exporten av svensk mat, och riksdagen tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:MJU15p3",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3021363.html"
 		},
 		{
 			"id":10,
-			"question":"",
-			"forslagspunkt":"wow",
-			"invert":false,
-			"url":""
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att arbetsmiljölagen bör ändras så att regionala skyddsombud får rätt att verka på företag med kollektivavtal även om det tillfälligtvis inte finns någon medlem i den kollektivavtalsbärande arbetstagarorganisationen vid företaget, och riksdagen tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:AU8p8",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H30234.html"
 		}
 	]
 }
