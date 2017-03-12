@@ -16,10 +16,10 @@
 		},
 		{
 			"id":3,
-			"question":"Förslaget innebär att bemyndigandet för regeringen att sända väpnad styrka utomlands för övning och annan utbildning ska omfatta all slags övning och annan utbildning inom ramen för internationellt militärt samarbete.",
-			"forslagspunkt":"2015/16:FöU14p2",
-			"invert":false,
-			"url":"http://data.riksdagen.se/dokument/H303122.html"
+			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att Livsmedelsverket ska vara tillsynsmyndighet när det gäller snus och tillkännager detta för regeringen.",
+			"forslagspunkt":"2015/16:SoU10p2",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3023324.html"
 		},
 		{
 			"id":4,
