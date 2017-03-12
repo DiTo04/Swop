@@ -26,14 +26,14 @@ function answerNo() {
   answering(false)
 }
 function answering(state){
-  var id = $(".question").attr("questionID");
+  var str = "#a" + (answeredQuestions.length + 1);
+  var id = $(str).attr("questionid");
+  console.log(id)
   answeredQuestions.push({agree: state, id: id});
   if(answeredQuestions.length == 10){
-    $.ajax({
-      url: '/finished',
-      data: {answeredQuestions: answeredQuestions},
-      type: 'POST',
-    });
+  	sessionStorage.data = answeredQuestions;
+    console.log(sessionStorage.data)
+    window.location.href = '/stats'; 
   }
 }
 
@@ -41,7 +41,7 @@ function assignQuestions() {
   for (var i = 1; i <= 10; i++){
     var str = "#a" + i;
     $(str).text(questions[0].questions)
-    $(str).attr("questionID", questions[0].id)
+    $(str).attr("questionid", questions[0].id)
     questions.shift();
   }
 
@@ -56,6 +56,8 @@ $(document).ready(function(){
     $(this).append('<div class="status like">JA!</div>');
     if ( $(this).is(':last-child') ) {
       $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+      sessionStorage.data = answeredQuestions;
+      console.log(sessionStorage.data)
     } else {
       $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
     }

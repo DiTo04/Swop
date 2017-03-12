@@ -15,6 +15,10 @@ app.get("/home", (req, res) => {
   res.sendFile(__dirname + "/question.html")
 })
 
+app.get("/stats",(req, res) => {
+  res.sendFile(__dirname + "/public/stats.html")
+})
+
 app.get("/question", (req, res) => {
   res.send(swopbackend.getQuestions());
 })
