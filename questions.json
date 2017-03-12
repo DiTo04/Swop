@@ -51,10 +51,10 @@
 		},
 		{
 			"id":8,
-			"question":"Riksdagen ställer sig bakom det som anförs i motionen om att flyktingkvoten inte ska användas för anhöriginvandring och tillkännager detta för regeringen.",
-			"forslagspunkt":"2015/16:SfU16p4",
-			"invert":false,
-			"url":"http://data.riksdagen.se/dokument/H3023417.html"
+			"question":"Riksdagen avslår proposition 2015/16:174 Tillfälliga begränsningar av möjligheten att få uppehållstillstånd i Sverige.",
+			"forslagspunkt":"2015/16:SfU16p1",
+			"invert":true,
+			"url":"http://data.riksdagen.se/dokument/H3023412.html"
 		},
 		{
 			"id":9,
