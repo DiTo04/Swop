@@ -20,10 +20,7 @@ app.get("/question", (req, res) => {
 })
 
 app.post("/finished", (req, res) => {
-  console.log(swopbackend)
-  swopbackend.getUsersPartyDistrobutionFrom(req.body.answeredQuestion);
-  
-  console.log(JSON.stringify(req.body));
+  console.log(swopbackend.getUsersPartyDistrobutionFrom(req.body.answeredQuestions));
 })
 
 app.listen(3000, () => {
