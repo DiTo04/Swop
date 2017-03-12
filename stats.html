@@ -35,18 +35,39 @@ tr:nth-child(even) {
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-/*
-var kommunData = [
-  {result: 5.72, name: "Vänsterpartiet", color: "#C40000"},
-  {result: 31.01, name: "Socialdemokraterna", color: "#FF0000"},
-  {result: 6.89, name: "Miljöpartiet", color: "#008000"},
-  {result: 6.11, name: "Centerpartiet", color: "#63A91D"},
-  {result: 5.42, name: "Liberalerna", color: "#3399FF"},
-  {result: 23.33, name: "Moderaterna", color: "#66BEE6"},
-  {result: 4.57, name: "Kristdemokraterna", color: "#1B5CB1"},
-  {result: 12.86, name: "Sverige\"demokraterna\"", color: "#4E83A3"}
-]
+var dist = {};
+$.ajax({
+  url: '/finished',
+  data: {answeredQuestions: JSON.parse(localStorage.data), lol:"boll"},
+  type: 'POST',
+  async: false,
+  success: function(kommunData2){
+    console.log(kommunData2)
+    var kommunLista = $("<table>").html("<tr><th>Kommun</th><th>Matchning</th></tr>");
+    var kommuner = kommunData2.kommuner;
+    dist = kommunData2.dist;
+    kommuner.forEach(function(d){
+      var tr = $("<tr>");
+      tr.append($("<td>").text(d.namn)).append($("<td>").text(d.match))
+      kommunLista.append(tr);
 
+      $("#kommuner").append(kommunLista);
+  
+    })
+  }
+})
+console.log(dist)
+var kommunData = [
+  {result: dist.V, name: "Vänsterpartiet", color: "#C40000"},
+  {result: dist.S, name: "Socialdemokraterna", color: "#FF0000"},
+  {result: dist.MP, name: "Miljöpartiet", color: "#008000"},
+  {result: dist.C, name: "Centerpartiet", color: "#63A91D"},
+  {result: dist.L, name: "Liberalerna", color: "#3399FF"},
+  {result: dist.M, name: "Moderaterna", color: "#66BEE6"},
+  {result: dist.KD, name: "Kristdemokraterna", color: "#1B5CB1"},
+  {result: dist.SD, name: "Sverige\"demokraterna\"", color: "#4E83A3"}
+]
+console.log(kommunData)
 var svg = d3.select("svg"),
 margin = {top: 20, right: 20, bottom: 30, left: 40},
 width = +window.outerWidth - margin.left ,
@@ -67,7 +88,6 @@ var g = svg.append("g")
 
   //x.domain(kommunData.map(function(d) { return d.letter; }));
   //y.domain([0, d3.max(kommunData, function(d) { return d.frequency; })]);
-
   g.append("g")
   .attr("class", "axis axis--x")
   .attr("transform", "translate(0," + height + ")")
@@ -83,47 +103,21 @@ var g = svg.append("g")
   .attr("text-anchor", "end")
   .text("Frequency");
 
-  /*g.selectAll(".bar")
-  .data(kommunData)
-  .enter().append("rect")
-  .attr("class", "bar")
-  .attr("x", function(d, i){return i*20})
-  .attr("y", 100)
 
   g.selectAll(".bar")
   .data(kommunData)
   .enter().append("rect")
   .attr("class", "bar")
   .style("fill", function(d){return d.color})
-  .attr("x", function(d, i) { return i*width/4 + 10; })
-  .attr("y", function(d, i) { return (height)-(d.result/50)*450})
+  .attr("x", function(d, i) { return i*width/12 + 10; })
+  .attr("y", function(d, i) { return (height)-(d.result)*1000})
   .attr("width", 40)
-  .attr("height", function(d) { return (d.result/50)*450 })
+  .attr("height", function(d) { return (d.result)*1000 })
   .text(function(d){return d.name});
-*/
+
 console.log(localStorage.data);
 
-$.ajax({
-  url: '/finished',
-  data: {answeredQuestions: JSON.parse(localStorage.data), lol:"boll"},
-  type: 'POST',
-  success: function(kommunData2){
-    console.log("Hej Aiman!")
-    var kommunLista = $("<table>").html("<tr><th>Kommun</th><th>Matchning</th></tr>");
-    kommunData2.forEach(function(d){
-      var tr = $("<tr>");
-      tr.append($("<td>").text(d.namn)).append($("<td>").text(d.match))
-      kommunLista.append(tr);
 
-      $("#kommuner").append(kommunLista);
-  
-    })
-
-
-
-
-  }
-})
 
 
 </script>
