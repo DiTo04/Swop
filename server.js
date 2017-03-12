@@ -20,7 +20,7 @@ app.get("/question", (req, res) => {
 })
 
 app.post("/finished", (req, res) => {
-  console.log(swopbackend.getUsersPartyDistrobutionFrom(req.body.answeredQuestions));
+  console.log(getKommunListFromUserAnswers(req.body.answeredQuestions));
 })
 
 app.listen(3000, () => {
