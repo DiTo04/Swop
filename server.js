@@ -20,7 +20,7 @@ app.get("/question", (req, res) => {
 })
 
 app.post("/finished", (req, res) => {
-  console.log(getKommunListFromUserAnswers(req.body.answeredQuestions));
+  console.log(swopbackend.getKommunListFromUserAnswers(req.body.answeredQuestions));
 })
 
 app.listen(process.env.PORT || 3000, () => {
