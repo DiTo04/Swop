@@ -102,21 +102,26 @@ var g = svg.append("g")
   .text(function(d){return d.name});
 */
 console.log(localStorage.data);
+
 $.ajax({
   url: '/finished',
-  data: {answeredQuestions: localStorage.data},
-  type: 'GET',
-  succes: function(kommunData2){
+  data: {answeredQuestions: JSON.parse(localStorage.data), lol:"boll"},
+  type: 'POST',
+  success: function(kommunData2){
+    console.log("Hej Aiman!")
     var kommunLista = $("<table>").html("<tr><th>Kommun</th><th>Matchning</th></tr>");
     kommunData2.forEach(function(d){
       var tr = $("<tr>");
-      tr.append($("<td>").text(d.name)).append($("<td>").text(d.match))
+      tr.append($("<td>").text(d.namn)).append($("<td>").text(d.match))
       kommunLista.append(tr);
+
+      $("#kommuner").append(kommunLista);
+  
     })
 
-console.log(kommunLista)
 
-$("#kommuner").append(kommunLista);
+
+
   }
 })
 

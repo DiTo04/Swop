@@ -30,9 +30,10 @@ function answering(state){
   var id = $(str).attr("questionid");
   console.log(id)
   answeredQuestions.push({agree: state, id: id});
+  localStorage.data = JSON.stringify(answeredQuestions);
+  console.log(localStorage.data)
   if(answeredQuestions.length == 10){
-  	sessionStorage.data = answeredQuestions;
-    console.log(sessionStorage.data)
+    console.log(localStorage.data)
     window.location.href = '/stats'; 
   }
 }

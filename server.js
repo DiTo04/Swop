@@ -16,7 +16,7 @@ app.get("/home", (req, res) => {
 })
 
 app.get("/stats",(req, res) => {
-  res.sendFile(__dirname + "/public/stats.html")
+  res.sendFile(__dirname + "/stats.html")
 })
 
 app.get("/question", (req, res) => {
@@ -24,7 +24,9 @@ app.get("/question", (req, res) => {
 })
 
 app.post("/finished", (req, res) => {
+  console.log(res.body);
   console.log(swopbackend.getKommunListFromUserAnswers(req.body.answeredQuestions));
+  res.send(swopbackend.getKommunListFromUserAnswers(req.body.answeredQuestions));
 })
 
 app.listen(process.env.PORT || 3000, () => {
